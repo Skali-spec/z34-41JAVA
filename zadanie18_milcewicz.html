@@ -1,0 +1,42 @@
+<!DOCTYPE html>   
+    <head>    
+        <title> Użycie fukcji </title>    
+        <meta charset="utf-8">  
+        <style>
+            body{
+                color:#302f2c;
+                background-color:#efede3;
+            } 
+        </style>
+    </head>  
+    <body> 
+        <div style="color:navy;font-size:50px;"> 
+        <script language="JavaScript"> 
+            var a=parseFloat(prompt("a=","")); 
+            var b=parseFloat(prompt("b=","")); 
+            function suma_mil(a, b) { 
+            return a + b; 
+            } 
+            function odejmowanie_mil(a,b) {
+                return a - b;
+            }
+            function mnozenie_mil(a,b) {
+                return a * b;
+            }
+            function kwadrat_mil(a,b) {
+                return Math.pow(a,b);
+            }
+            function reszta_mil(a,b) {
+                return a % b;
+            }
+            document.write("suma="+suma_mil(a,b)+"<br>");
+            document.write("odejmowanie="+odejmowanie_mil(a,b)+"<br>"); 
+            document.write("mnozenie="+mnozenie_mil(a,b)+"<br>");
+            document.write("reszta z dzielenia="+reszta_mil(a,b)+"<br>"); 
+            document.write("Kwadrat="+kwadrat_mil(a,b)+"<br>"); 
+        </script> 
+        </div> 
+    </body> 
+
+</html>
+

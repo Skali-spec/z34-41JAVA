@@ -1,0 +1,59 @@
+<html> 
+<!-Alan Milcewicz 3F 30.11.25-!->
+<body>
+<textarea cols="80"rows="60"> 
+    <head>  
+        <title> 
+         Przykład obliczenia V  i  Pc walca 
+        </title> 
+    <script language="JavaScript"> 
+    function Pole_milcewicz(a_mil,b_mil) 
+    { 
+        let a=parseFloat(a_mil) 
+        let b=parseFloat(b_mil)
+        let Pole_wynik=a*b
+        document.getElementsByName('pole')[0].value=Pole_wynik.toFixed(2);   
+        alert("Pole_mil="+Pole_wynik.toFixed(2)+" cm^2");                                                    
+        document.getElementById("pokaz1").innerHTML = "Pole=" +Pole_wynik.toFixed(2) + " cm^2";     
+    } 
+
+    function Obw_milcewicz(a_mil,b_mil) 
+    { 
+        let c=parseFloat(a_mil) 
+        let d=parseFloat(b_mil) 
+        let Obw_wynik=2*c+2*d
+        document.getElementsByName('Obwod')[0].value=Obw_wynik.toFixed(2); 
+        alert("Obw_mil="+Obw_wynik.toFixed(2)+"cm"); 
+        document.getElementById("pokaz2").innerHTML = "Obwód=" + Obw_wynik.toFixed(2)+"cm";
+    } 
+    </script> 
+</head>  
+<body>  
+    Obliczanie Pola   i  Obwodu prostokąta
+    <br> <br> 
+    <form name="formularz" action="" onsubmit="
+        Pole_milcewicz(this.a.value,this.b.value); 
+        Obw_milcewicz(this.a.value,this.b.value);return false">   
+     Podaj a= 
+        <input  size="6"  name="a"> 
+     Podaj b= 
+        <input  size="6"  name="b"> 
+                       <br>   <br> 
+        <input  TYPE="submit"  Value="oblicz" > 
+                       <br>   <br> 
+     Pole_mil= 
+           <input  size="6"  name="pole"> 
+     Obw_mil= 
+          <input  size="6"  name="Obwod"> 
+    </form> 
+    <table> 
+        <tr ><td id="pokaz1"></td></tr> 
+        <tr><td id="pokaz2" ></td></tr> 
+    </table> 
+</body>  
+</html>
+
+
+</textarea>
+</body>
+</html>

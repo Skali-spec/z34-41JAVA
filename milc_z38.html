@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 38</title>
+</head>
+
+<body style="background-color:silver;">
+
+<script>
+
+let imie="Alan";
+let nazwisko="Milcewicz";
+let dzien_urodzenia=3;
+let nr_dziennik=17;
+
+/* obliczenia */
+
+let liczba1_mil = imie.length;
+let liczba2_mil = liczba1_mil + 7;
+let liczba3_mil = nazwisko.length;
+let liczba4_mil = liczba3_mil + 4;
+
+let wielkosc = 40 + (nr_dziennik % 7);
+
+
+
+document.write("<font color=green size="+wielkosc+">");
+document.write("Moje nazwisko to: "+nazwisko+" "+imie+"<br>");
+document.write("liczba1 = "+liczba1_mil+"<br>");
+document.write("liczba2 = "+liczba2_mil+"<br>");
+document.write("liczba3 = "+liczba3_mil+"<br>");
+document.write("liczba4 = "+liczba4_mil+"<br>");
+document.write("</font>");
+
+
+
+document.write("<br>");
+
+document.write("<font color=red size="+wielkosc+">");
+document.write("--------------MENU-------------<br>");
+document.write(liczba1_mil+" - teoria o operatorach logicznych<br>");
+document.write((liczba3_mil+20)+" - sprawdzanie przedziału ("+liczba1_mil+" ; "+liczba2_mil+"]<br>");
+document.write((dzien_urodzenia+50)+" - sprawdzanie przedziału (-∞ ; "+liczba1_mil+") lub ["+liczba2_mil+" ; +∞)<br>");
+document.write("</font>");
+
+
+
+let opcja_mil = prompt("Podaj numer opcji");
+
+
+if(opcja_mil == liczba1_mil)
+{
+document.write("<font color=blue size=7>Teoria operatorów logicznych</font><br>");
+
+document.write("Operator AND (&&) - oba warunki muszą być prawdziwe<br>");
+document.write("Operator OR (||) - jeden z warunków musi być prawdziwy<br>");
+document.write("Operator NOT (!) - zaprzeczenie warunku<br>");
+}
+
+
+
+if(opcja_mil == liczba3_mil+20)
+{
+let liczba_mil = prompt("Podaj liczbę");
+
+if((liczba_mil > liczba1_mil) && (liczba_mil <= liczba2_mil))
+{
+document.write("<font color=green size=7>Liczba należy do przedziału</font>");
+}
+else
+{
+document.write("<font color=red size=7>Liczba NIE należy do przedziału</font>");
+}
+}
+
+
+
+if(opcja_mil == dzien_urodzenia+50)
+{
+let liczba2_mil = prompt("Podaj liczbę");
+
+if((liczba2_mil < liczba1_mil) || (liczba2_mil >= liczba2_mil))
+{
+document.write("<font color=green size=7>Liczba należy do przedziału</font>");
+}
+else
+{
+document.write("<font color=red size=7>Liczba NIE należy do przedziału</font>");
+}
+}
+
+
+
+if((opcja_mil != liczba1_mil) && (opcja_mil != liczba3_mil+20) && (opcja_mil != dzien_urodzenia+50))
+{
+document.write("<font color=red size=7>Nie ma takiej opcji</font>");
+}
+
+</script>
+
+</body>
+</html>

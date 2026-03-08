@@ -1,0 +1,31 @@
+<html> 
+     <head> 
+	 Zadanie 32 Alan Milcewicz 3Fg2 <br>
+<textarea rows="30" cols="100">
+<html> 
+     <head> 
+           <script type="text/javascript"> 
+              function ciezarowka(ladownosc_m,kolor_m,dlugosc_m)//początek konstruktora 
+  { 
+   this.ladownosc=ladownosc_m; 
+   this.kolor=kolor_m; 
+   this.dlugosc=dlugosc_m;   
+  }//koniec konstruktora 
+              ciezarowka.prototype.wypisz = function () //definicja metody 
+      { 
+         alert(this.ladownosc + ' ' + this.kolor+ ' ' + this.dlugosc); 
+      }; 
+  var ciezarowka1 = new ciezarowka("11t", "Niebieski", "10m"); // nowy obiekt osoba1 
+  var ciezarowka2 = new ciezarowka('10t', "Biały", '8m'); 
+  ciezarowka1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1 
+  ciezarowka2.wypisz(); 
+                document.write("dostęp do właściwości"+"<br>"); 
+// poniżej dostęp do pól ciezarowka1 
+     document.write("pierwsza ciezarowka"+"   "+ciezarowka1.ladownosc+"   "+ciezarowka1.kolor+"   "+ciezarowka1.dlugosc); 
+            </script> 
+     </head> 
+<body> 
+ <br> 
+   programowanie obiektowe   
+</body> 
+</html>

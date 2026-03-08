@@ -1,0 +1,29 @@
+<!Doctype html>
+<!-Alan Milcewicz 3F 30.11.25-!->
+<head>
+    <meta charset="utf-8">
+    <title>
+    Alan Milcewicz Zadanie 25
+    </title>
+</head>
+<body style="background-color:silver;">
+<div style="color:blue;font-size:30px;">
+    <script language="JavaScript">
+        var No_mil=prompt("No=","");
+        var t_mil=prompt("t=","");
+		var T_1_2_mil=prompt("T1/2=","");
+		
+        var No=parseFloat(No_mil);
+			document.write("No="+No_mil+"[Sztuk]"+"<br>");
+        var t=parseFloat(t_mil);
+			document.write("t="+t_mil+"[lat]"+"<br>");
+		var T_1_2=parseFloat(T_1_2_mil);
+			document.write("T1/2="+T_1_2_mil+"[lat]"+"<br>");
+        var lam_mil=Math.log(2)/T_1_2;
+			document.write("Lambda="+lam_mil.toFixed(7)+"[1/rok]"+"<br>");
+		var N_mil=No_mil*Math.exp(-lam_mil*t);
+			document.write("N="+N_mil.toFixed(8)+"[sztuk]"+"<br>");
+    </script>
+</div>
+</body>
+</html>

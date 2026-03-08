@@ -1,0 +1,28 @@
+<html>
+ <body>
+ <div style="color:green;font-size:33px;">
+    <script language="JavaScript">
+// Alan Milcewicz 3F 11.10.2025
+// Zadanie 12
+    var D1_mil=prompt("Nimerdniamiesiaca=",""); //wartosc 1
+    var D2_mil=prompt("NumerdniaMiesiaca=","");
+    var G1_mil=prompt("Godzina1=","");
+    var G2_mil=prompt("Godzina2=","");
+    var sekund;
+    var a=parseFloat(D1_mil); //przypisywanie d1mil do a
+     var b=parseFloat(D2_mil); // przypisywanie d2mil do b
+     var c=parseFloat(G1_mil);
+     var d=parseFloat(G2_mil);
+    sekund=(a-b)*24*60*60 + (c-d)*60*60;
+
+     document.write("Ilość sekund między dniami "+a+" i "+b+" i godzinami "+c+" i "+d+" = "+sekund+" sekund <br>");
+    function okno_zamknij_bilyi()
+    {
+    window.close()
+    }
+    </script>
+ </div>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_bilyi()"/>
+ </body>
+</html>
+

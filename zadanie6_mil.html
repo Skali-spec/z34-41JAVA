@@ -1,0 +1,83 @@
+<!--Alan Milcewicz 3F--!>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad 6 Alan Milcewicz 3F</title>
+    <style>
+        body {
+            font-family: Georgia;
+            line-height: 1.6;
+            margin: 40px;
+            
+        }
+        h1 {
+            text-align: center;
+            
+        }
+        b{
+			color:#C41E06;
+		}
+        p {
+            margin-bottom: 20px;
+        }
+        .klasa1 {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Zagadnienia teoretyczne z JavaScript</h1>
+
+    <p class="klasa1">
+        <b>1) Rodzaje okienek:</b><br>
+        W JavaScript występują trzy podstawowe <b><u>rodzaje okienek</u></b>:
+        <ul>
+            <li><b>Okienko alert</b> – wyświetla <u>okno dialogowe</u> z informacją i przyciskiem <b>OK</b>.</li>
+            <li><b>Okienko prompt</b> – generuje <u>okno</u>, w którym użytkownik może <u>wprowadzić wartość</u>; jest ona następnie zwracana do programu.</li>
+            <li><b>Okienko confirm</b> – służy do tego, aby użytkownik <u>coś potwierdził</u> (stąd nazwa <b>confirm</b>).</li>
+        </ul>
+    </p>
+
+    <p class="klasa1">
+        <b>2) Konwersji liczb:</b><br>
+        Wczytanie zmiennej za pomocą funkcji <b>prompt()</b> powoduje, że jest ona traktowana jako <u>ciąg znaków</u>.  
+        Aby wykonać obliczenia, konieczna jest <b><u>konwersja z ciągu znaków na wartości liczbowe</u></b>.<br><br>
+        Stosowane funkcje konwersji:
+        <ul>
+            <li><b>parseFloat(zmienna)</b> – konwertuje zmienną do typu <u>float</u> (liczba zmiennoprzecinkowa).</li>
+            <li><b>parseInt(zmienna)</b> – konwertuje zmienną do typu <u>int</u> (liczba całkowita).</li>
+            <li><b>toString(zmienna)</b> – konwertuje zmienną do typu <u>łańcuchowego</u> (tekst).</li>
+        </ul>
+    </p>
+
+    <p class="klasa1">
+        <b>3) Przy nadawaniu nazw zmiennym należy przestrzegać pewnych zasad:</b><br>
+        <ol>
+            <li><b><u>Nazwa zmiennej</u></b> musi zaczynać się od litery, znaku <b>"$"</b> lub <b>"_"</b>. Może zawierać tylko litery (bez polskich znaków), cyfry, <b>"$"</b> i <b>"_"</b>.<br>
+                <u>Poprawne nazwy:</u> zmienna1, $wynik, _rozmiar, wynik1, Rekord, $_gracz<br>
+                <u>Błędne nazwy:</u> 1zmienna, wynik gry, wysokosc&szerokosc, wynik.rekord, &gracz, wysokość, imie+nazwisko.
+            </li>
+            <li><b><u>Wielkość liter ma znaczenie</u></b> – zmienne <b>Rekord</b> i <b>rekord</b> to dwie różne zmienne.</li>
+            <li><b><u>Nie należy używać słów kluczowych JavaScript</u></b> jako nazw zmiennych.</li>
+        </ol>
+    </p>
+
+    <p class="klasa1">
+        <b>4) Omów typy zmiennych w JavaScript:</b><br>
+        W języku <b>JavaScript</b> nie definiuje się typu zmiennej w momencie jej deklaracji – <u>typ określany jest automatycznie</u> podczas przypisania wartości.<br><br>
+        Podstawowe typy zmiennych:
+        <ul>
+            <li><b>Number</b> – typ liczbowy (całkowite i zmiennoprzecinkowe wartości).</li>
+            <li><b>String</b> – typ tekstowy (łańcuch znaków).</li>
+            <li><b>Boolean</b> – typ logiczny (<u>true</u> lub <u>false</u>).</li>
+            <li><b>Null</b> – oznacza <u>pustą zawartość</u>.</li>
+            <li><b>Undefined</b> – oznacza, że zmienna jest <u>niezdefiniowana</u>.</li>
+            <li><b>Object</b> – typ obiektowy, służący do przechowywania <u>złożonych danych</u>.</li>
+        </ul>
+    </p>
+
+</body>
+</html>

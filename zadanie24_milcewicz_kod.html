@@ -1,0 +1,43 @@
+<html>
+<!-Alan Milcewicz 3F 30.11.25-!->
+<head>
+<title>
+ Kod zadanie 24 - Alan Milcewicz 3F
+</title>
+</head>
+<body>
+<textarea cols="75"rows="35">
+
+
+<!Doctype html>
+<!-Alan Milcewicz 3F 30.11.25-!->
+<head>
+    <meta charset="utf-8">
+    <title>
+    Alan Milcewicz Zadanie 24
+    </title>
+</head>
+<body style="background-color:silver;">
+<div style="color:blue;font-size:30px;">
+    <script language="JavaScript">
+        var liczba1=prompt("liczba1=","");
+        var liczba2=prompt("liczba2=","");
+        var x1_mil=parseFloat(liczba1);
+        var x2_mil=parseFloat(liczba2);
+        var rad_x1_mil=(x1_mil*Math.PI)/180;
+			document.write("X1="+x1_mil+"&nbsp&nbsp&nbsp&nbsp&nbsp"+"X2="+x2_mil+"<br>");
+			document.write("St x1="+x1_mil+"&nbsp&nbsp&nbsp"+"Rad X1="+rad_x1_mil.toFixed(2)+"<br>");
+        var y1_mil=3*Math.pow(x1_mil,4/6);
+			document.write("y1="+y1_mil.toFixed(2)+"<br>");
+        var y2_mil=2*Math.cos(rad_x1_mil)+3*Math.sin(rad_x1_mil);
+			document.write("y2="+y2_mil.toFixed(2)+"<br>");
+        akuku=Math.pow(x1_mil,5)+2*Math.pow(x2_mil,4);
+        y3_mil=Math.pow(akuku,1/3)*Math.abs(x1_mil-x2_mil);
+			document.write("y3="+y3_mil.toFixed(2)+"<br>");
+    </script>
+</div>
+</body>
+</html>
+</textarea>
+</body>
+</html>

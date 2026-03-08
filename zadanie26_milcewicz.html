@@ -1,0 +1,38 @@
+<html> 
+<!-Alan Milcewicz 3F 30.11.25-!->
+ <head> 
+  <meta charset="utf-8"> 
+ </head> 
+ 
+<body style="background-color:silver;font-color:red"> 
+  Podaj wartość a: <input type="text" id="a_mil" value=""> <br><br><br>
+  Podaj wartość b: <input type="text" id="b_mil" value=""> <br><br><br> 
+  Podaj wartość h: <input type="text" id="h_mil" value=""> <br><br><br> 
+  <input type="button" name="Pole" value="Oblicz Pole" onclick="Pow_Milcewicz(
+  parseFloat(document.getElementById('a_mil').value),parseFloat(document.getElementById('b_mil').value),parseFloat(document.getElementById('h_mil').value))"><br><br> 
+  <input type="button" name="Obwod" value="Oblicz Obwód" onclick="Obw_Milcewicz(
+parseFloat(document.getElementById('a_mil').value),parseFloat(document.getElementById('b_mil').value),parseFloat(document.getElementById('h_mil').value))"><br><br>
+  <div  style="color:red;font-size:50px;"id="nazwa"></div> 
+ <script type="text/javascript"> 
+
+  function Pow_Milcewicz(a_mil,b_mil,h_mil) 
+   { 
+ var a = parseFloat(document.getElementById('a_mil').value);
+ var b = parseFloat(document.getElementById('b_mil').value);
+ var h = parseFloat(document.getElementById('h_mil').value);
+ var Pole_mil=((a+b)/2)*h;
+        document.getElementById("nazwa").innerHTML ="Pole="+Pole_mil.toFixed(2);  
+   } 
+   function Obw_Milcewicz(a_mil,b_mil,h_mil) 
+   { 
+ var a = parseFloat(document.getElementById('a_mil').value);
+ var b = parseFloat(document.getElementById('b_mil').value);
+ var h = parseFloat(document.getElementById('h_mil').value);
+ 
+ var ramie=Math.sqrt(Math.pow(Math.abs(b-a)/2, 2) + Math.pow(h, 2));
+ var Obw_mil=a+b+2*ramie;
+        document.getElementById("nazwa").innerHTML ="Obwód="+Obw_mil.toFixed(2);  
+   } 
+ </script> 
+</body> 
+</html> 

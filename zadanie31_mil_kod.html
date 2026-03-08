@@ -1,0 +1,64 @@
+<html> 
+     <head> 
+	 Zadanie 31 Alan Milcewicz 3Fg2 <br>
+<textarea rows="60" cols="100">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 31</title>
+
+<script type="text/javascript">
+
+
+var ciezarowka = {
+    ladownosc: '11t',
+    kolor: 'Szary',
+    dlugosc: '11m',
+    pokaz: function () {
+        document.write(
+            "Ładowność: " + this.ladownosc + "<br>" +
+            "Kolor: " + this.kolor + "<br>" +
+            "Długość: " + this.dlugosc + "<br>"
+        );
+    }
+};
+
+
+ciezarowka.pokaz();
+
+
+ciezarowka.wlasciciel = "Kowalski";
+
+
+ciezarowka.wypisz = function () {
+    document.write("Właściciel: " + this.wlasciciel + "<br>");
+};
+
+ciezarowka.wypisz();
+
+</script>
+</head>
+
+<body>
+<br>
+<b>Programowanie obiektowe</b><br><br>
+
+Obiekt: <b>ciezarowka</b><br><br>
+
+Pola obiektu:<br>
+- ladownosc<br>
+- kolor<br>
+- dlugosc<br><br>
+
+Metoda obiektu:<br>
+- wypisz()<br><br>
+
+Nowe pole (poza ciałem obiektu):<br>
+- wlasciciel<br><br>
+
+Nowa metoda:<br>
+- ciezarowka.wypisz()<br>
+
+</body>
+</html>
